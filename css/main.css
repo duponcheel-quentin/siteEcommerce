@@ -97,17 +97,33 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body {
-  display: flex;
-  flex-direction: column;
-}
 /* Start utility styles */
 .d-flex {
   display: flex;
 }
+
+.column {
+  flex-direction: column;
+}
+
+main {
+  margin-top: 20px;
+}
 /* End utility styles */
 
 /* Start header styles */
+header {
+  background-image: url(../img/fermeTravailleur.png);
+  background-size: cover;
+  height: 50vh;
+  align-items: flex-end;
+}
+
+nav {
+  width: 100%;
+  margin: 3vh 0 7vh 0;
+}
+
 ul{
     display: table;
     width: 80%;
@@ -170,8 +186,27 @@ ul li a:hover::before, ul li a:focus::before{
                 0 -1px 0 rgba(0, 0, 0, .4);
 }
 
-.btnConnexion {
-  justify-content: flex-end;
+.sizeSearch {
+  margin-right: 10px;
+}
+
+.sizeTitle {
+  text-align: center;
+  width: 30%;
+  margin-right: 10%;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Cinzel', serif;
+  color: #6D4218;
+  text-shadow: 0 1px 0 #DBE2FF;
+}
+
+h5 {
+  font-size: 25px;
+  font-family: 'Cormorant', serif;
+  text-shadow: 0 1px 0 #DBE2FF;
 }
 /* End header styles */
 
@@ -180,7 +215,7 @@ footer {
   text-align: center;
   bottom: 0;
   width: 100%;
-  height: 50px;
+  margin-top: 20vh;
 }
 /* End footer styles */
 
